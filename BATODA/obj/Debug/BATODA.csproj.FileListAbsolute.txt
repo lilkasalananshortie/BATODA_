@@ -10,3 +10,4 @@ C:\Users\Admin\source\repos\BATODA\BATODA\obj\Debug\BATODA.exe
 C:\Users\Admin\source\repos\BATODA\BATODA\obj\Debug\BATODA.pdb
 C:\Users\Admin\source\repos\BATODA\BATODA\obj\Debug\BATODA.DashboardForm.resources
 C:\Users\Admin\source\repos\BATODA\BATODA\obj\Debug\BATODA.DashboardUForm.resources
+C:\Users\Admin\source\repos\BATODA\BATODA\obj\Debug\BATODA.MembersUForm.resources

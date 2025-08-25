@@ -91,6 +91,7 @@ namespace BATODA
         private void btnMembers_Click(object sender, EventArgs e)
         {
             TogglePanel(MembersContainer);
+            ShowControl(new MembersUForm());
 
         }
 
