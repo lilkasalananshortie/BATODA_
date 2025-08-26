@@ -51,7 +51,18 @@ namespace BATODA
                 }
             }
         }
-
+        private void CollapseAll()
+        {
+            foreach (Control ctrl in NavBarPanel.Controls)
+            {
+                if (ctrl is Panel p)
+                {
+                    p.Height = collapsedHeight;
+                   
+                }
+            }
+            activePanel = null;
+        }
         private void CollapseAllExcept(Panel panelToKeepOpen)
         {
             foreach (Control ctrl in NavBarPanel.Controls)
@@ -122,7 +133,68 @@ namespace BATODA
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
-            ShowControl(new DashboardUForm());
+            if (activePanel != null && activePanel.Height > collapsedHeight)
+            {
+                expanding = false;
+                timer1.Start();
+            }
+            else if (activePanel != null && activePanel.Height == collapsedHeight)
+            {    
+                activePanel = null;
+            }
+
+            // Show the dashboard
+            ShowControl(new DashboardUForm());        
+        }
+
+        private void TransferMembershipButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TransferRecordsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AssistanceRequestButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ARHButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TransferVehicleButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TransferRecordButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButawButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MembershipRenewalButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BackupButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

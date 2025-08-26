@@ -36,6 +36,7 @@ namespace BATODA
         {
             DashboardForm DashBoardform = new DashboardForm();
             DashBoardform.Show();
+            this.Hide();
            
 
         }
